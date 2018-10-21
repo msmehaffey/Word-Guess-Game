@@ -55,4 +55,8 @@ input{
     #challenge {
         font-size: 25px;
     }
+
+    input {
+        visibility: visible;
+    }
 }
