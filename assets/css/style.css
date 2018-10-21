@@ -22,13 +22,37 @@ body, html {
     text-shadow: black 0.3em 0.3em 0.3em;
 }
 
-.container {
-    color: black;
-    position: relative;
-    top: 100px;
-    left: 0px;
+.card {
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
 }
 
 #challenge {
     font-size: 50px;
+}
+
+input{
+    visibility: hidden;
+}
+
+.card-link {
+    font-size: 16px;
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 100%;
+        position: relative;
+    }
+
+    #headliner{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #challenge {
+        font-size: 25px;
+    }
 }
