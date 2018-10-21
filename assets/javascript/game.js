@@ -10,7 +10,6 @@ var blankWord = [];
      var i = Math.floor(Math.random() * randomWords.length);
      var wordSelect = randomWords[i];
      var randArr = wordSelect.split("");
-     var remainingLetters = wordSelect.length;
      var guessRemaining = 15;
 
      for (var d = 0; d < wordSelect.length; d++){
@@ -30,15 +29,16 @@ var blankWord = [];
             for (var j = 0; j < wordSelect.length; j++) {
                 if (randArr[j] === guess) {
                 blankWord[j] = guess;
-                remainingLetters--;
+                console.log(blankWord.indexOf("_"));
                 }
-                if (remainingLetters === 0) {
+                if (blankWord.indexOf("_") === -1) {
                     document.location.reload(false);
                     alert("You won! The name was: " + wordSelect + "!");
                 }
             }
                 document.getElementById("challenge").innerHTML = blankWord.join(" ");
                 }
+
         } 
   
     }
