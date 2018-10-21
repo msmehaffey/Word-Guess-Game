@@ -11,7 +11,7 @@ var blankWord = [];
      var wordSelect = randomWords[i];
      var randArr = wordSelect.split("");
      var remainingLetters = wordSelect.length;
-     var guessRemaining = 10;
+     var guessRemaining = 15;
 
      for (var d = 0; d < wordSelect.length; d++){
      blankWord.push("_");
